@@ -1,0 +1,18 @@
+<resources>
+
+    <string name="title_activity_login">登陆</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_password">密码</string>
+    <string name="action_sign_in_register">登陆</string>
+    <string name="action_sign_in_short">登陆</string>
+    <string name="action_forgot_password">忘记密码</string>
+    <string name="login_progress_signing_in">正在登入…</string>
+    <string name="error_invalid_email">用户名不合法</string>
+    <string name="error_invalid_password">密码太短</string>
+    <string name="error_incorrect_password">密码不正确</string>
+    <string name="error_field_required">必填</string>
+    <string name="prompt_user_name">用户名</string>
+    <string name="register">注册</string>
+
+</resources>

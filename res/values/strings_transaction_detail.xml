@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="transaction_title">交易名称</string>
+    <string name="transaction_type">交易类型</string>
+    <string name="transaction_state">交易状态</string>
+    <string name="transaction_order_time">下单时间</string>
+    <string name="transaction_seller">商家名称</string>
+    <string name="transaction_price">价格</string>
+    
+    <string name="transaction_pay_time">付款时间</string>
+    <string name="transaction_deliver_time">出货时间</string>
+    <string name="transaction_confirm_time">确认时间</string>
+    
+    <string name="t_button_charge">帐户充值</string>
+    <string name="t_button_modify">修改个人信息</string>
+    <string name="t_button_modify_password">修改密码</string>
+    
+    <string name="t_button_pay">付款</string>
+    <string name="t_button_comment">评论</string>
+    <string name="t_button_confirm">确认收货</string>
+    <string name="t_button_refund">退款</string>
+    <string name="t_button_back">返回</string>
+    <string name="t_button_statement">帐单查询</string>
+    
+</resources>

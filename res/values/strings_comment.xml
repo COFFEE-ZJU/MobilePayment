@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="comment_info">请如实填写您的评价</string>
+	<string name="input_comment_here">请在此处填写您的评价</string>
+    <string name="comment">添加评价</string>
+</resources>

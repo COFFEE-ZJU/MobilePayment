@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="current_balance">当前余额</string>
+    <string name="charge_amount">充值金额</string>
+    <string name="charge">充值</string>
+    
+</resources>

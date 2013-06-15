@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tv_order_id"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tv_seller"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tv_order_time"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="" />
+	<TextView
+        android:id="@+id/tv_orde_price"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="" />
+</LinearLayout>

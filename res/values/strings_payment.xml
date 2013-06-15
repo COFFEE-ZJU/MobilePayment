@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="prompt_pay_password">请输入支付密码</string>
+    <string name="show_balance">您的余额为:</string>
+    <string name="pay">支付</string>
+    <string name="not_enought_money">余额不足,请充值后再进行付款</string>
+</resources>

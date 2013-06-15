@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".FlightActivity" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/hotel_order" />
+
+    <ImageButton
+        android:id="@+id/order_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:background="#000000"
+        android:src="@drawable/comfirm" />
+
+    <TextView
+        android:id="@+id/tv_od_hname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="116dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tv_roomtype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_od_hname"
+        android:layout_below="@+id/tv_od_hname"
+        android:layout_marginTop="22dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_chekin_checkout"
+        android:layout_below="@+id/tv_chekin_checkout"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="26dp"
+        android:text="1200" />
+
+    <TextView
+        android:id="@+id/tv_chekin_checkout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_roomtype"
+        android:layout_below="@+id/tv_roomtype"
+        android:layout_marginTop="20dp"
+        android:text="TextView" />
+
+</RelativeLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pclee.onlinebooking"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    
+	<uses-permission android:name="android.permission.INTERNET" />  
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="14" />
+
+    <application
+        android:allowBackup="true"
+        android:name="cn.edu.zju.cs.onlinepayment.personal.ApplicationHelper"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+       <activity
+            android:name="cn.edu.zju.cs.onlinepayment.booking.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.edu.zju.cs.onlinepayment.booking.FlightActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.edu.zju.cs.onlinepayment.booking.HotelActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.edu.zju.cs.onlinepayment.booking.OrderActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name="cn.edu.zju.cs.onlinepayment.personal.LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.edu.zju.cs.onlinepayment.personal.PersonalInforActivity"
+            android:label="@string/title_activity_personal_infor" >
+        </activity>
+        <activity
+            android:name="cn.edu.zju.cs.onlinepayment.personal.ModifyInforActivity"
+            android:label="@string/title_activity_modify_infor" >
+        </activity>
+        <activity
+            android:name="cn.edu.zju.cs.onlinepayment.personal.ModifyPasswordActivity"
+            android:label="@string/title_activity_modify_password" >
+        </activity>
+        <activity
+            android:name="cn.edu.zju.cs.onlinepayment.personal.ChargeActivity"
+            android:label="@string/title_activity_charge" >
+        </activity>
+        <activity
+            android:name="cn.edu.zju.cs.onlinepayment.personal.RegisterActivity"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name="cn.edu.zju.cs.onlinepayment.personal.StatementActivity"
+            android:label="@string/title_activity_statement" >
+        </activity>
+        
+        <activity
+            android:name="cn.edu.zju.cs.onlinepayment.transaction.TransactionListActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.edu.zju.cs.onlinepayment.transaction.TransactionDetailActivity"
+            android:label="@string/title_transaction_detail" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TransactionListActivity" />
+        </activity>
+        <activity
+            android:name="cn.edu.zju.cs.onlinepayment.transaction.PaymentActivity" 
+            android:label="@string/title_make_payment" >
+		</activity>
+		<activity
+            android:name="cn.edu.zju.cs.onlinepayment.transaction.ConfirmtActivity" 
+            android:label="@string/title_confirm" >
+		</activity>
+		<activity
+            android:name="cn.edu.zju.cs.onlinepayment.transaction.CommentActivity" 
+            android:label="@string/title_comment" >
+		</activity>
+		<activity
+            android:name="cn.edu.zju.cs.onlinepayment.transaction.RefundActivity" 
+            android:label="@string/title_refund" >
+		</activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string name="confirm_info">请确保您收到货后再确认收货</string>
+    <string name="confirm">确认收货</string>
+</resources>

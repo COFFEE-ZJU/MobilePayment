@@ -1,0 +1,170 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ModifyInforActivity" >
+
+    <EditText
+        android:id="@+id/editText_mobile_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/TextView_mobile_phone"
+        android:layout_alignLeft="@+id/editText_address"
+        android:ems="10"
+        android:hint="@string/prompt_mobile_phone"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/editText_Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/TextView_Email"
+        android:layout_alignLeft="@+id/editText_mobile_phone"
+        android:ems="10"
+        android:hint="@string/prompt_email"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/TextView_mobile_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView_Email"
+        android:layout_alignRight="@+id/textView_user_name"
+        android:layout_marginTop="10dp"
+        android:text="@string/mobile_phone"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/TextView_Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView_user_name"
+        android:layout_below="@+id/TextView_address"
+        android:layout_marginTop="10dp"
+        android:text="@string/Email"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editText_real_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/TextView_realname"
+        android:layout_toRightOf="@+id/TextView_realname"
+        android:layout_alignLeft="@+id/textView_user_name_content"
+        android:ems="10"
+        android:hint="@string/prompt_real_name"
+        android:inputType="textPersonName" >
+            <requestFocus />
+    </EditText>
+  
+    <TextView
+        android:id="@+id/TextView_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView_user_name"
+        android:layout_below="@+id/TextView_gender"
+        android:text="@string/address"
+        android:layout_marginTop="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+   
+
+    <TextView
+        android:id="@+id/TextView_realname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView_user_name"
+        android:layout_below="@+id/textView_user_name"
+        android:layout_marginTop="10dp"
+        android:text="@string/real_name"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/TextView_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/TextView_mobile_phone"
+        android:layout_below="@+id/TextView_mobile_phone"
+        android:layout_marginTop="10dp"
+        android:text="@string/ID"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editText_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView_ID"
+        android:layout_alignBottom="@+id/TextView_ID"
+        android:layout_alignLeft="@+id/editText_mobile_phone"
+        android:hint="@string/prompt_ID"
+        android:ems="10" />
+
+   
+    <TextView
+        android:id="@+id/TextView_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView_realname"
+        android:layout_alignRight="@+id/TextView_realname"
+        android:layout_marginTop="10dp"
+        android:text="@string/gender"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/EditText_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/TextView_gender"
+        android:layout_alignLeft="@+id/editText_real_name"
+        android:ems="10"
+        android:hint="@string/prompt_gender"
+   />
+
+    <EditText
+        android:id="@+id/editText_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText_Email"
+        android:layout_alignLeft="@+id/EditText_gender"
+        android:layout_alignBottom="@+id/TextView_address"
+        android:ems="10"
+        android:hint="@string/prompt_address"
+        android:inputType="textMultiLine" >
+
+    </EditText>
+
+    <Button
+        android:id="@+id/button_modify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_ID"
+        android:layout_below="@+id/editText_ID"
+        android:layout_marginTop="37dp"
+        android:text="@string/modify" />
+
+    <TextView
+        android:id="@+id/textView_user_name_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView_realname"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/textView_user_name"
+        android:text="user_name"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="53dp"
+        android:layout_marginTop="103dp"
+        android:text="@string/user_name"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

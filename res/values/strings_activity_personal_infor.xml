@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="button_charge">帐户充值</string>
+    <string name="button_modify">修改个人信息</string>
+    <string name="button_modify_password">修改密码</string>
+    <string name="button_back">返回</string>
+    <string name="button_statement">帐单查询</string>
+</resources>

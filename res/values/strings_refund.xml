@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="refund_info">请如实填写您退款原因</string>
+	<string name="input_refund_reason_here">请在此处填写您退款原因</string>
+    <string name="refund">申请退款</string>
+</resources>
