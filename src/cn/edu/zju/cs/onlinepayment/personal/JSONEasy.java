@@ -8,25 +8,26 @@ import org.json.JSONObject;
 
 public class JSONEasy extends JSONObject {
 	JSONObject jsonObject;
-	public JSONEasy(HashMap<String, String> hashMap){
+
+	public JSONEasy(HashMap<String, String> hashMap) {
 		jsonObject = new JSONObject();
-		try{
+		try {
 			for (Entry<String, String> entry : hashMap.entrySet()) {
-			    jsonObject.put(entry.getKey(), entry.getValue());
+				jsonObject.put(entry.getKey(), entry.getValue());
 			}
-		}catch (JSONException e){
-			    e.printStackTrace();
-			}	
+		} catch (JSONException e) {
+			e.printStackTrace();
+		}
 	}
-	
-	public JSONEasy(String[] keys, String[] values){
-		assert(keys.length == values.length);
+
+	public JSONEasy(String[] keys, String[] values) {
+		assert (keys.length == values.length);
 		jsonObject = new JSONObject();
-		try{
-			for(int i = 0;i < keys.length; ++i){
-				jsonObject.put(keys[i],  values[i]);
+		try {
+			for (int i = 0; i < keys.length; ++i) {
+				jsonObject.put(keys[i], values[i]);
 			}
-		} catch (JSONException e){
+		} catch (JSONException e) {
 			e.printStackTrace();
 		}
 	}

@@ -1,6 +1,6 @@
 package cn.edu.zju.cs.onlinepayment.transaction;
 
-import com.pclee.onlinebooking.R;
+import cn.edu.zju.cs.onlinepayment.R;
 
 import android.content.Intent;
 import android.os.Bundle;

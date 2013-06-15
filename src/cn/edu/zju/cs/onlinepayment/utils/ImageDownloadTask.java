@@ -42,9 +42,10 @@ public class ImageDownloadTask extends AsyncTask<Object, Object, Bitmap> {
 
 	Bitmap getImage(String Url) throws Exception {
 		try {
-			Log.i("pclee",Url);
-			URL url = new URL("http://www.elongstatic.com/imageapp/hotels/hotelimages/1201/41201313/17_cf31e9d8-2309-4501-bbbd-ca95f2557927.jpg");
-			URLConnection urlCon = url.openConnection(); 
+			Log.i("pclee", Url);
+			URL url = new URL(
+					"http://www.elongstatic.com/imageapp/hotels/hotelimages/1201/41201313/17_cf31e9d8-2309-4501-bbbd-ca95f2557927.jpg");
+			URLConnection urlCon = url.openConnection();
 			String responseCode = urlCon.getHeaderField(0);
 			if (responseCode.indexOf("200") < 0)
 				throw new Exception("图片文件不存在或路径错误，错误代码：" + responseCode);

@@ -1,13 +1,12 @@
 package cn.edu.zju.cs.onlinepayment.transaction;
 
-import com.pclee.onlinebooking.R;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.NavUtils;
 import android.util.Log;
 import android.view.MenuItem;
+import cn.edu.zju.cs.onlinepayment.R;
 
 /**
  * An activity representing a single Transaction detail screen. This activity is

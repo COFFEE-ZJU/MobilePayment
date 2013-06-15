@@ -5,7 +5,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
@@ -13,9 +12,9 @@ import android.view.View;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
+import cn.edu.zju.cs.onlinepayment.R;
 import cn.edu.zju.cs.onlinepayment.transaction.data.DummyContent;
 
-import com.pclee.onlinebooking.R;
 
 /**
  * A list fragment representing a list of Transactions. This fragment also
@@ -77,7 +76,7 @@ public class TransactionListFragment extends ListFragment {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-
+		//bind the values with the IDs int the view 
 		SimpleAdapter adapter = new SimpleAdapter(getActivity(),getData(),R.layout.transaction_list_item,
 				new String[]{"title","price","time","state"},
 				new int[]{R.id.title,R.id.price,R.id.time,R.id.state});
@@ -86,7 +85,7 @@ public class TransactionListFragment extends ListFragment {
 
 	private List<Map<String, Object>> getData() {
 		List<Map<String, Object>> list = new ArrayList<Map<String, Object>>();
-
+		//put the information into the map with the corresponding keys
 		Map<String, Object> map = new HashMap<String, Object>();
 		for(int i=0; i<DummyContent.ITEMS.size(); i++){
 			map = new HashMap<String, Object>();

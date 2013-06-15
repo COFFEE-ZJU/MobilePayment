@@ -16,7 +16,7 @@ import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.pclee.onlinebooking.R;
+import cn.edu.zju.cs.onlinepayment.R;
 
 /**
  * Activity which displays a login screen to the user, offering registration as
@@ -27,13 +27,13 @@ public class LoginMainActivity extends Activity {
 	 * A dummy authentication store containing known user names and passwords.
 	 * TODO: remove after connecting to a real authentication system.
 	 */
-	private static final String[] DUMMY_CREDENTIALS = new String[] {
-			"mayun:alibaba" };
+	private static final String[] DUMMY_CREDENTIALS = new String[] { "mayun:alibaba" };
 
 	/**
 	 * The default email to populate the email field with.
 	 */
-//	public static final String EXTRA_EMAIL = "com.example.android.authenticatordemo.extra.EMAIL";
+	// public static final String EXTRA_EMAIL =
+	// "com.example.android.authenticatordemo.extra.EMAIL";
 
 	/**
 	 * Keep track of the login task to ensure we can cancel it if requested.
@@ -56,7 +56,7 @@ public class LoginMainActivity extends Activity {
 		setContentView(R.layout.activity_login);
 
 		// Set up the login form.
-		//m = getIntent().getStringExtra(EXTRA_EMAIL);
+		// m = getIntent().getStringExtra(EXTRA_EMAIL);
 		mUserNameView = (EditText) findViewById(R.id.user_name);
 		mUserNameView.setText("");
 
@@ -85,14 +85,14 @@ public class LoginMainActivity extends Activity {
 						attemptLogin();
 					}
 				});
-		
+
 		findViewById(R.id.register_button).setOnClickListener(
 				new View.OnClickListener() {
 					@Override
 					public void onClick(View v) {
 						registerAccount();
 					}
-		});
+				});
 	}
 
 	@Override
@@ -101,13 +101,13 @@ public class LoginMainActivity extends Activity {
 		getMenuInflater().inflate(R.menu.login, menu);
 		return true;
 	}
-	
-	public void registerAccount(){
-		Intent registerIntent = new Intent(LoginMainActivity.this, RegisterActivity.class);
+
+	public void registerAccount() {
+		Intent registerIntent = new Intent(LoginMainActivity.this,
+				RegisterActivity.class);
 		startActivity(registerIntent);
 		finish();
 	}
-
 
 	/**
 	 * Attempts to sign in or register the account specified by the login form.
@@ -159,7 +159,7 @@ public class LoginMainActivity extends Activity {
 			showProgress(true);
 			mAuthTask = new UserLoginTask();
 			mAuthTask.execute((Void) null);
-			
+
 		}
 	}
 
@@ -227,11 +227,11 @@ public class LoginMainActivity extends Activity {
 					match = true;
 					return pieces[1].equals(mPassword);
 				}
-		
+
 			}
 
 			// TODO: register the new account here.
-			
+
 			return match;
 		}
 
@@ -242,10 +242,11 @@ public class LoginMainActivity extends Activity {
 
 			if (success) {
 				Intent intent = new Intent();
-				intent.setClass(LoginMainActivity.this, PersonalInforActivity.class);
+				intent.setClass(LoginMainActivity.this,
+						PersonalInforActivity.class);
 				startActivity(intent);
 				finish();
-				
+
 			} else {
 				mPasswordView
 						.setError(getString(R.string.error_incorrect_password));
